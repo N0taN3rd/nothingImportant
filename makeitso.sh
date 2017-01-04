@@ -37,3 +37,5 @@ cp dist/cdxIndexer/cdx-indexer dist/pywb
 cp dist/cdxServer/cdx-server dist/pywb
 cp dist/wbMan/wb-manager dist/pywb
 
+chmod a+rwx runPywb.sh
+cp runPywb.sh dist/pywb

@@ -59,10 +59,10 @@ template_globals:
     static_path: *static_default_prefix
 
 static_routes:
-    *static_default_prefix: static/
+    *static_default_prefix: pywb/static/
 
 enable_memento: true
 
-domain_specific_rules: rules.yaml
+domain_specific_rules: pywb/rules.yaml
 
 framed_replay: inverse

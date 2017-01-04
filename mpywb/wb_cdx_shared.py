@@ -278,7 +278,7 @@ def create_wb_router(passed_config=None):
         dir_loader()
         # collections.update(dir_loader())
 
-    if config.get('enable_memento', False):
+    if config.get('enable_memento', True):
         request_class = MementoRequest
     else:
         request_class = WbRequest
@@ -340,7 +340,7 @@ def create_wb_router(passed_config=None):
             root_route = new_route
 
         # cdx query handler
-        cdx_api_suffix = route_config.get('enable_cdx_api', False)
+        cdx_api_suffix = route_config.get('enable_cdx_api', True)
 
         if cdx_api_suffix:
             add_cdx_api_handler(name, cdx_api_suffix, routes, query_handler,
